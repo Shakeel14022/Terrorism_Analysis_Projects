@@ -1,0 +1,27 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: circleci/python:3.8
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: python -m pip install --upgrade pip && pip install -r Terrorism_Analysis_Project/requirements.txt
+      - run:
+          name: Set PYTHONPATH
+          command: |
+            export PYTHONPATH=$PYTHONPATH:$PWD/Terrorism_Analysis_Project
+            echo $PYTHONPATH
+      - run:
+          name: Run tests
+          command: |
+            export PYTHONPATH=$PYTHONPATH:$PWD/Terrorism_Analysis_Project
+            python -m unittest discover -s Terrorism_Analysis_Project/Tests
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - test
