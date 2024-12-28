@@ -47,9 +47,11 @@ if raw_data is not None:
     # Add caption
     plt.figtext(
         0.5,
-        -0.23,
-        'The number of terrorist incidents of each attack type and their relative success count,\n'
-        'whereby success of a terrorist incident is determined if the motive or element of the attack was fulfilled',
+        -0.26,
+        'Figure 3: The number of terrorist incidents of each attack type and their relative success count,\n'
+        'whereby success of a terrorist incident is determined if the motive or element of the attack was fulfilled.\n'
+        'The graph shows that certain attack types, such as bombings, are for more frequent than other attack types,\n'
+        'but have a lower success rate overall as opposed to barricade hostage incidents.',
         wrap=True,
         horizontalalignment='center',
         fontsize=10
