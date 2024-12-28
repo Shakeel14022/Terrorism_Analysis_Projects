@@ -59,7 +59,6 @@ if raw_data is not None:
     # Save the figure
     plt.savefig('Terrorism_Analysis_Project/figures_and_statistics/Terrorism_Fatalities_Over_Years_ModelFit.png', bbox_inches='tight')
 
-    import matplotlib.pyplot as plt
 
     # Create a vertical boxplot with labeled axes and a caption
     plt.figure(figsize=(8, 6))
