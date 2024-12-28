@@ -1,0 +1,74 @@
+
+
+--- Descriptive Statistics by Attack Type ---
+                                     count  mean    std
+attacktype1_txt                                        
+Armed Assault                        46896  3.89  12.24
+Assassination                        21436  1.29   1.85
+Bombing/Explosion                    93926  1.85   7.45
+Facility/Infrastructure Attack       11691  0.39   6.26
+Hijacking                              691  5.42  74.97
+Hostage Taking (Barricade Incident)   1055  4.79  20.72
+Hostage Taking (Kidnapping)          10572  3.06  24.98
+Unarmed Assault                       1216  0.77   6.90
+Unknown                               9696  5.02  11.64
+
+--- Welch ANOVA Results ---
+         Source  ddof1       ddof2          F  p-unc      np2
+attacktype1_txt      8 7572.594176 452.004277    0.0 0.011525
+
+--- Exponential Model Equation ---
+Exponential Model Equation: y(t) = 820.55 * e^(0.0738 * (t - 1970))
+
+--- Exponential Model Equation ---
+Exponential Model Equation: y(t) = 820.55 * e^(0.0738 * (t - 1970))
+
+--- Exponential Model Equation ---
+Exponential Model Equation: y(t) = 820.55 * e^(0.0738 * (t - 1970))
+
+--- Exponential Model Equation ---
+Exponential Model Equation: y(t) = 820.55 * e^(0.0738 * (t - 1970))
+
+--- Exponential Model Equation ---
+Exponential Model Equation: y(t) = 820.55 * e^(0.0738 * (t - 1970))
+
+--- Exponential Model Equation ---
+Exponential Model Equation: y(t) = 820.55 * e^(0.0738 * (t - 1970))
+
+--- Exponential Model Equation ---
+Exponential Model Equation: y(t) = 820.55 * e^(0.0738 * (t - 1970))
+
+--- Exponential Model Equation ---
+Exponential Model Equation: y(t) = 820.55 * e^(0.0738 * (t - 1970))
+Correlation Analysis: Total Number of Killed Per Year
+-----------------------------------------------------
+Pearson Correlation Coefficient: 0.726
+P-Value: 2.34e-09
+
+
+--- Exponential Model Equation ---
+Exponential Model Equation: y(t) = 820.55 * e^(0.0738 * (t - 1970))
+
+Correlation Analysis: Total Number of Killed Per Year
+-----------------------------------------------------
+Pearson Correlation Coefficient: 0.726
+P-Value: 2.34e-09
+
+
+--- Exponential Model Equation ---
+Exponential Model Equation: y(t) = 820.55 * e^(0.0738 * (t - 1970))
+
+Correlation Analysis: Total Number of Killed Per Year
+-----------------------------------------------------
+Pearson Correlation Coefficient: 0.726
+P-Value: 2.34e-09
+
+
+--- Exponential Model Equation ---
+Exponential Model Equation: y(t) = 820.55 * e^(0.0738 * (t - 1970))
+
+Correlation Analysis: Total Number of Killed Per Year
+-----------------------------------------------------
+Pearson Correlation Coefficient: 0.726
+P-Value: 2.34e-09
+
