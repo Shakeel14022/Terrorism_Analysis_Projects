@@ -10,7 +10,7 @@ raw_data = load_dataset()
 if raw_data is not None:
     data = clean_dataset(raw_data)
 
-    # Filter data for ANOVA visualization
+    # Filter data for ANOVA visualisation
     filtered_data = data[['nkill', 'attacktype1_txt']].dropna()
 
     # Group by attack type to calculate mean and confidence intervals
@@ -35,8 +35,10 @@ if raw_data is not None:
     # Add labels, title, and caption
     plt.xlabel('Attack Type', fontsize=12)
     plt.ylabel('Mean Fatalities', fontsize=12)
-    plt.title('Mean Fatalities by Attack Type with 95% Confidence Intervals', fontsize=14)
-    plt.figtext(0.5, -0.32, 'The mean number of fatalities per terrorist attack type, with 95% Confidence Intervals',
+    plt.title('Mean Fatalities by Attack Type with 95% Confidence Intervals.', fontsize=14)
+    plt.figtext(0.5, -0.35, 'Figure 2: The mean number of fatalities per terrorist attack type, with 95% Confidence Intervals.\n'
+              'This graph aims to provide a visual context to Welchs ANOVA test, presenting the differences in the\n' 
+              'mean fatalities and their relative confidence intervals per terrorist attack type.',
                 wrap=True, horizontalalignment='center', fontsize=10)
 
     # Save the figure in the correct directory
