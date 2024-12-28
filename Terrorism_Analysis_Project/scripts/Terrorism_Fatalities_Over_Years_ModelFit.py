@@ -35,6 +35,9 @@ if raw_data is not None:
     # Generate predictions
     y_pred = a * np.exp(b * X_normalised)
 
+    # Calculate residuals of modelfit
+    residuals = y - y_pred
+
     # Plot the results
     plt.figure(figsize=(10, 6))
     plt.scatter(X, y, alpha=0.7, label="Actual Fatalities", color='blue', marker='x')
@@ -47,27 +50,34 @@ if raw_data is not None:
     plt.legend()
     plt.grid(True)
 
-    plt.figtext(0.5, -0.1, 'An exponential model fit that explores changes in total fatalities resulted from terrorist incidents\n'
-                "every year, from 1970 to 2020",
+    plt.figtext(0.5, -0.1, 'Figure 1: An exponential model fit over a scatterplot that explores changes in total fatalities\n' 
+            'resulted from terrorist incidents every year, from 1970 to 2020. The model of equation:\n'
+            'y = 820.55 * e^(0.0738 * (t - 1970)), suggests an exponential average increasing trend, of approx 7.38% rise in\n' 
+            'terrorism related fatalities per year.',
             wrap=True, horizontalalignment='center', fontsize=10)
         
     # Save the figure
     plt.savefig('Terrorism_Analysis_Project/figures_and_statistics/Terrorism_Fatalities_Over_Years_ModelFit.png', bbox_inches='tight')
 
-    # Exponential model equation as a string
-    model_equation = f"Exponential Model Equation: y(t) = {a:.2f} * e^({b:.4f} * (t - 1970))"
+    import matplotlib.pyplot as plt
 
     # Create a vertical boxplot with labeled axes and a caption
     plt.figure(figsize=(8, 6))
-    plt.boxplot(residuals, vert=True, patch_artist=True, boxprops=dict(facecolor="orange"))
+    plt.boxplot(residuals, vert=True, patch_artist=True, boxprops=dict(facecolor="lightblue"))
     plt.title("Boxplot of Residuals", fontsize=14)
     plt.xlabel("Residuals", fontsize=12)
     plt.ylabel("Residual Values", fontsize=12)
     plt.grid(True)
-    plt.figtext(0.5, -0.05, "This boxplot illustrates the spread and variability of the residuals from the exponential model fit.\n "
-                            "The y-axis represents the residual values", 
+    plt.figtext(0.5, -0.09, 'Sub-Figure 1: This boxplot illustrates the spread and variability of the residuals from the exponential model fit.\n'
+            'The y-axis represents the residual values. There appears to be a relatively normal distribution to the residuals of\n'
+            'the model, with a relatively symmetrical structure around/close to 0. The 2 positive outlier points highlight the\n'
+            'extreme nature of terrorism and terrorist attacks - with some years far exceeding the predictions of the model fit.', 
             wrap=True, horizontalalignment='center', fontsize=10)
     plt.savefig('Terrorism_Analysis_Project/figures_and_statistics/Boxplot_of_Residuals.png', bbox_inches='tight')
+
+
+    # Exponential model equation as a string
+    model_equation = f"Exponential Model Equation: y(t) = {a:.2f} * e^({b:.4f} * (t - 1970))"
 
     # Path to the statistics.txt file
     statistics_file = 'Terrorism_Analysis_Project/figures_and_statistics/statistics.txt'
