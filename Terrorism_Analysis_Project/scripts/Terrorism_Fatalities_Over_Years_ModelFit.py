@@ -57,6 +57,18 @@ if raw_data is not None:
     # Exponential model equation as a string
     model_equation = f"Exponential Model Equation: y(t) = {a:.2f} * e^({b:.4f} * (t - 1970))"
 
+    # Create a vertical boxplot with labeled axes and a caption
+    plt.figure(figsize=(8, 6))
+    plt.boxplot(residuals, vert=True, patch_artist=True, boxprops=dict(facecolor="orange"))
+    plt.title("Boxplot of Residuals", fontsize=14)
+    plt.xlabel("Residuals", fontsize=12)
+    plt.ylabel("Residual Values", fontsize=12)
+    plt.grid(True)
+    plt.figtext(0.5, -0.05, "This boxplot illustrates the spread and variability of the residuals from the exponential model fit.\n "
+                            "The y-axis represents the residual values", 
+            wrap=True, horizontalalignment='center', fontsize=10)
+    plt.savefig('Terrorism_Analysis_Project/figures_and_statistics/Boxplot_of_Residuals.png', bbox_inches='tight')
+
     # Path to the statistics.txt file
     statistics_file = 'Terrorism_Analysis_Project/figures_and_statistics/statistics.txt'
 
