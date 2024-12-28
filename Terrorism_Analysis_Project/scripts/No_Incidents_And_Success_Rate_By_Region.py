@@ -34,9 +34,11 @@ if raw_data is not None:
     ax2.legend(loc='upper right', bbox_to_anchor=(1, 1.1), title='Line Chart')  # Adjusted position
 
     plt.figtext(
-        0.5, -0.23,
-        'This chart shows the total number of terrorist incidents (bars) and their success rate (line) across different regions.\n'
-        'The success of a terrorist incident is determined if the motive or element of the attack was fulfilled', 
+        0.5, -0.25,
+        'Figure 4: This dual chart shows the total number of terrorist incidents (bars) and their success rate (line) across different regions.\n'
+        'The success of a terrorist incident is determined if the motive or element of the attack was fulfilled.\n'
+        'The graph presents how The Middle East and North Africa have the highest frequency of terrorist incidents,\n'
+        'but Central America and Caribean have the highest success rate of such attacks.', 
         wrap=True, horizontalalignment='center', fontsize=10
     )
 
