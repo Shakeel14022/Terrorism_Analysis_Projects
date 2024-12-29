@@ -1,0 +1,46 @@
+1. Dataset Loader Tests
+File: test_dataset_loader.py
+test_load_success: Verifies that the dataset loads successfully and returns a DataFrame with rows and columns.
+test_file_not_found: Tests that the function handles missing file errors gracefully by returning None.
+test_handle_general_exceptions: Ensures unexpected exceptions during dataset loading are handled gracefully.
+
+2. Dataset Cleaner Tests
+File: test_dataset_cleaner.py
+test_cleaning_removes_missing_rows: Checks if rows with missing values in critical columns (nkill, success) are removed.
+test_cleaning_fills_missing_text_columns: Ensures missing values in textual columns (attacktype1_txt, region_txt) are filled with "Unknown".
+test_cleaning_numeric_conversion: Verifies that critical numeric columns are converted to integers.
+test_cleaning_relevant_columns: Ensures only relevant columns are retained after cleaning.
+
+3. Welch's ANOVA Test
+File: test_Welchs_ANOVA_Test.py
+
+test_filtered_data_not_empty: Verifies that the filtered dataset used for Welch's ANOVA is not empty.
+test_welch_anova_results: Ensures that the Welch's ANOVA results contain the correct statistical columns and valid data.
+test_descriptive_statistics: Checks that descriptive statistics (count, mean, std) are computed correctly for attack types.
+test_statistics_file_update: Confirms that Welch's ANOVA results and descriptive statistics are correctly appended to statistics.txt.
+
+4. Visualization Tests
+File: test_Attacktype_Frequency_And_Success_visual.py
+
+test_grouped_data_stats: Ensures the grouping of attack types correctly calculates total and successful incidents.
+test_sorted_data: Verifies that the grouped data is sorted by total incidents in descending order.
+test_visualisation_file_creation: Confirms that the visualisation file is created in the correct directory.
+
+File: test_ModelFit_visual.py
+
+test_exponential_model_fit: Verifies the exponential model fit computes parameters (a, b) correctly.
+test_yearly_data_aggregation: Ensures yearly fatalities are aggregated correctly from the dataset.
+test_visualisation_file_creation: Confirms that the visualisation file is created in the correct directory.
+
+File: test_No_Incidents_And_Success_Rate_By_Region_visual.py
+
+test_grouped_data_calculation: Ensures correct calculation of incidents and success rates by region.
+test_sorted_data: Verifies the data is sorted by incidents in descending order.
+test_visualisation_file_creation: Confirms that the visualisation file is created in the correct directory.
+
+File: test_confidenceinterval_visual.py
+
+test_confidence_interval_calculation: Checks that the 95% confidence intervals for fatalities by attack type are computed correctly.
+test_filtered_data_not_empty: Ensures the filtered dataset for confidence interval visualisation is not empty.
+test_grouped_data_statistics: Verifies that grouped statistics (mean, count, std) are computed correctly.
+test_visualisation_file_creation: Confirms that the visualisation file is created in the correct directory.
