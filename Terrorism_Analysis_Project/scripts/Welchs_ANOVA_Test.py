@@ -22,7 +22,7 @@ if raw_data is not None:
 
     # Append results to statistics.txt
     with open(statistics_file, 'a') as f:
-        f.write("\n--- Descriptive Statistics by Attack Type ---\n")
+        f.write("\n--- Descriptive Statistics of fatalities by Attack Type ---\n")
         f.write(desc_stats.to_string(index=True))  # Write descriptive statistics as a string
         f.write("\n\n--- Welch ANOVA Results ---\n")
         f.write(welch_results.to_string(index=False))  # Write Welch ANOVA results as a string
