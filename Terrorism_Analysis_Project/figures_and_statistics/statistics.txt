@@ -1,6 +1,6 @@
 
 
---- Descriptive Statistics by Attack Type ---
+--- Descriptive Statistics of fatalities by Attack Type ---
                                      count  mean    std
 attacktype1_txt                                        
 Armed Assault                        46896  3.89  12.24
