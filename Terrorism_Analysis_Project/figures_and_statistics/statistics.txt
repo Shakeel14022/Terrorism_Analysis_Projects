@@ -20,7 +20,8 @@ attacktype1_txt      8 7572.594176 452.004277    0.0 0.011525
 --- Exponential Model Equation ---
 Exponential Model Equation: y(t) = 820.55 * e^(0.0738 * (t - 1970))
 
-Correlation Analysis: Total Number of Killed Per Year
+Correlation Analysis: Correlation between transformed variables
 -----------------------------------------------------
-Pearson Correlation Coefficient: 0.726
-P-Value: 2.34e-09
+Pearson Correlation Coefficient: 0.825
+P-Value: 1.76e-13
+
