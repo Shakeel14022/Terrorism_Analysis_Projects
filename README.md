@@ -38,7 +38,8 @@ The repository is structured as follows:
     - `Welchs_ANOVA_Test.py`
     - `dataset_cleaner.py`: Script to clean the dataset.
     - `dataset_loader.py`: Script to load the cleaned dataset into the analysis pipeline.
-    - `requirements.txt`: Lists Python dependencies needed to run the scripts.
+      
+  - **`requirements.txt`**: Lists Python dependencies needed to run the scripts.
 
   - **`Tests/`**: Includes all test files to validate scripts and functionality.
     - `Test_Suite_Details.txt`: Overview of all tests conducted.
@@ -76,7 +77,7 @@ cd Terrorism_Analysis_Projects
 ### 2. Install Required Libraries
 Ensure you have Python installed (version 3.8+ is recommended). Install the required dependencies by running:
 ```bash
-pip install -r Terrorism_Analysis_Project/scripts/requirements.txt
+pip install -r Terrorism_Analysis_Project/requirements.txt
 ```
 
 ### 3. Run the Scripts
