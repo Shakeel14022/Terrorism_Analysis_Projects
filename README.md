@@ -94,9 +94,9 @@ pip install -r Terrorism_Analysis_Project/scripts/requirements.txt
   ```
 
 - **Tests**:  
-  Run unit tests located in the `Tests/` directory to ensure functionality:
+  Run unit tests in terminal located in the `Tests/` directory to ensure functionality:
   ```bash
-  python -m unittest discover Terrorism_Analysis_Project/Tests
+  python -m unittest discover -s Terrorism_Analysis_Project/Tests -p "*.py" -t Terrorism_Analysis_Project
   ```
 
 ---
